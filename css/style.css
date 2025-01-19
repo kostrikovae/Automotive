@@ -1,0 +1,334 @@
+@font-face {
+  font-family: Quite Chocolatey;
+  src: url(../fonts/quite-chocolatey.ttf);
+}
+@font-face {
+  font-family: "Couture";
+  font-weight: 700;
+  src: url(../fonts/couture-bld.otf);
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 700;
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: "PT Serif";
+  font-weight: 400;
+  src: url(../fonts/PTSerif-Regular.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-width: 320px;
+}
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.header {
+  background-image: url(../img/background_header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header__panel {
+  padding: 40px 105px 125px 85px;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  font-family: "Quite Chocolatey";
+}
+.header__logo {
+  font-size: 88px;
+  color: #ffffff;
+  padding-right: 60px;
+}
+.navbar {
+  list-style: none;
+  display: flex;
+  padding-top: 20px;
+}
+.navbar a {
+  padding: 10px 15px;
+  font-size: 18px;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  background: transparent;
+  border: 0;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.navbar a:hover {
+  background: #130e27;
+  border-radius: 5px;
+}
+.main-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  line-height: 80px;
+  padding: 0 105px 0;
+  font-size: 90px;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+  display: grid;
+  color: #130e27;
+}
+.main-title--color-white {
+  color: #ffffff;
+}
+.header__text {
+  padding: 0 105px 155px;
+  color: #ffffff;
+  font-size: 20px;
+  max-width: 615px;
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+}
+.services {
+  margin: 45px 0 70px;
+  padding: 0 105px;
+}
+.services-title {
+  font-size: 50px;
+  text-transform: uppercase;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 90px;
+  flex-wrap: wrap;
+  color: #c62314;
+  font-family: "Couture", sans-serif;
+  font-weight: 700;
+}
+
+.services-title__other-color {
+  color: #130e27;
+}
+.services-list {
+  list-style: none;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 200px);
+  gap: 70px;
+}
+
+.services-list__item {
+  display: grid;
+  justify-items: center;
+}
+
+.services-list__icon {
+  color: #130e27;
+  height: 155px;
+  margin-bottom: 45px;
+}
+
+.services-list h3 {
+  color: #161616;
+  font-size: 20px;
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  width: 190px;
+  text-align: center;
+}
+
+.our-story {
+  background-color: #130e27;
+  padding: 35px 105px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  column-gap: 60px;
+}
+.our-story__text {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+  max-width: 620px;
+}
+.our-story a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #c62314;
+  font-size: 22px;
+  padding: 25px 65px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0;
+}
+.pricing {
+  padding: 65px 105px;
+  background-color: #efefef;
+}
+.pricing h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 50px;
+  color: #130e27;
+  text-align: center;
+  margin-bottom: 55px;
+}
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  justify-content: center;
+  gap: 40px;
+}
+.pricing-card {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 35px 60px 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.pricing-card h3 {
+  font-size: 22px;
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  color: #161616;
+}
+.pricing__price {
+  color: #c62314;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+.facilities {
+  list-style: none;
+}
+.facilities li {
+  font-size: 20px;
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  color: #161616;
+}
+
+.pricing a {
+  color: #ffffff;
+  border-radius: 5px;
+  background: #130e27;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 0;
+  padding: 20px 0;
+}
+.pricing a:hover {
+  background: #c62314;
+}
+footer {
+  background-color: #130e27;
+  padding: 60px 105px 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer__text {
+  font-size: 20px;
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  color: #ffffff;
+  padding: 0 60px 45px 0;
+}
+.red {
+  color: #c62314;
+}
+.footer__logo {
+  font-size: 64px;
+  color: #c62314;
+}
+@media (min-width: 1131px) {
+  #burger {
+    display: none;
+  }
+}
+@media screen and (max-width: 1130px) {
+  .header__panel {
+    padding-right: 50px;
+  }
+  .navbar {
+    display: none;
+  }
+  .active {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 100px;
+  }
+  #burger {
+    width: 40px;
+    cursor: pointer;
+    height: 25px;
+    position: absolute;
+    right: 70px;
+    top: 65px;
+  }
+  #burger span {
+    background-color: white;
+    height: 5px;
+    display: block;
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #logo {
+    font-size: 48px;
+  }
+  .main-title {
+    font-size: 70px;
+    padding: 0 45px 0;
+  }
+  .header__text {
+    padding: 0 45px 155px;
+    color: #ffffff;
+    font-size: 20px;
+    max-width: 615px;
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+  }
+  .services {
+    margin: 45px 0 70px;
+    padding: 0 35px;
+  }
+  footer {
+    padding: 60px 45px 85px;
+  }
+  .header__panel {
+    padding: 40px 50px 125px 15px;
+  }
+  .header__logo {
+    font-size: 88px;
+    color: #ffffff;
+    padding-right: 20px;
+  }
+  .pricing {
+    padding: 65px 35px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .our-story {
+    padding: 35px 45px;
+  }
+}
