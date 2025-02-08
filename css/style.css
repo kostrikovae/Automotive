@@ -267,21 +267,19 @@ footer {
     padding-right: 50px;
   }
   .navbar {
+    display: none;
+  }
+  .navbar.active {
     top: 0;
     right: 0;
     position: absolute;
     display: grid;
+    justify-content: center;
     gap: 12px;
-    padding: 42px 0;
+    padding: 100px 60px 42px;
     margin: 0;
-    background: rgb(241, 84, 11);
+    background: #d31c0c;
     list-style-type: none;
-    transform: translateX(0%);
-    transition: 0.3s;
-    width: 200px;
-  }
-  .active {
-    transform: translateX(100%);
   }
   .navbar li {
     display: block;
@@ -296,8 +294,8 @@ footer {
     display: block;
     position: absolute;
     z-index: 1;
-    top: 10px;
-    right: 10px;
+    top: 40px;
+    right: 40px;
     border: none;
     background: transparent;
     width: 40px;
